@@ -1,0 +1,116 @@
+/* Base style for everything in the app */
+QWidget {
+    background: PRIMARY_COLOR;
+    border: none;
+}
+
+QGraphicsView {
+    background: white;
+    border: none;
+}
+
+QPushButton {
+    border-radius: 3px;
+    border: 1px solid DARK_GRAY;
+    background: WHITE;
+    color: DARK_GRAY;
+}
+QPushButton:hover {
+    background: DARK_GRAY;
+    color: WHITE;
+}
+
+QLineEdit {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid DARK_GRAY;
+    background: WHITE;
+    color: BLACK;
+}
+
+QLabel {
+    color: BLACK;
+}
+
+/* Style all Menus (Context Menu, Menu Bar, Sub Menus)*/
+QMenuBar, CanvasToolBarSpacer {
+    border-bottom: 1px solid SECONDARY_COLOR;
+}
+QMenuBar::item:selected, QMenu::item:selected {
+    color: BLACK;
+    background: LIGHT_GRAY;
+}
+
+/* Style Canvas ToolBar */
+*[qssClass="CanvasToolBar"], QToolButton {
+    background: PRIMARY_COLOR;
+}
+QToolBar[qssClass="CanvasToolBar"] {
+    border-bottom: 1px solid SECONDARY_COLOR;
+}
+
+/* Round the ToggleButton */
+QPushButton[qssClass="ToggleButton"] {
+    border: 2px solid SECONDARY_COLOR;
+    border-radius: 20px;
+}
+
+/* Style SearchInput Frame*/
+QFrame[qssClass="SearchInput"] {
+    border: 2px solid SECONDARY_COLOR;
+    background: white;
+    border-radius: 20px;
+    margin: 10, 10, 10, 10;
+}
+
+/* Style the SearchInputField */
+QComboBox[qssClass="SearchInputField"], QPushButton[qssClass="SearchInputButton"] {
+    border: none;
+    background: transparent;
+}
+QComboBox::drop-down[qssClass="SearchInputField"] {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+}
+
+/* Style ScrollBar of the SearchResultsDisplay*/
+QScrollBar[qssClass="SearchResultsDisplayScrollBar"] {
+    height: 6px;
+}
+QScrollBar::handle[qssClass="SearchResultsDisplayScrollBar"] {
+    background-color: SECONDARY_COLOR;
+    min-width: 5px;
+    border-radius: 3px;
+}
+QScrollBar::sub-line[qssClass="SearchResultsDisplayScrollBar"],
+QScrollBar::add-line[qssClass="SearchResultsDisplayScrollBar"],
+QScrollBar::sub-page[qssClass="SearchResultsDisplayScrollBar"],
+QScrollBar::add-page[qssClass="SearchResultsDisplayScrollBar"] {
+    background: PRIMARY_COLOR;
+}
+
+/* Style the splitter handle separating Canvas-SearchBar and Canvas-Box  */
+QSplitter::handle:vertical {
+    border-top: 1px solid SECONDARY_COLOR;
+    border-bottom: 1px solid SECONDARY_COLOR;
+}
+QSplitter::handle:horizontal {
+    border-left: 1px solid SECONDARY_COLOR;
+    border-right: 1px solid SECONDARY_COLOR;
+}
+
+/* Style the Box ScrollBar*/
+QScrollBar[qssClass="BoxScrollBar"] {
+    width: 6px;
+}
+QScrollBar::handle[qssClass="BoxScrollBar"] {
+    background-color: SECONDARY_COLOR;
+    border-radius: 3px;
+}
+QScrollBar::sub-line[qssClass="BoxScrollBar"],
+QScrollBar::add-line[qssClass="BoxScrollBar"],
+QScrollBar::sub-page[qssClass="BoxScrollBar"],
+QScrollBar::add-page[qssClass="BoxScrollBar"] {
+    background: PRIMARY_COLOR;
+}

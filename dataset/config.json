@@ -1,0 +1,5 @@
+{
+    "info_path": "./dataset/example/MET_info.hdf5",
+    "encodings_path": "./dataset/example/MET_CLIP.hdf5",
+    "meta_path": "./dataset/example/processed_meta_data.csv"
+}
