@@ -52,9 +52,9 @@ To install the tool, you have two options:
 
 ### **Installers**
 
-- Windows - [Download]()
-- macOS (Apple Silicon) - [Download]()
-- macOS (Intel) - [Download]()
+- Windows - [Download](https://github.com/VCI-RWTH/TrainingTheArchive/releases/download/v1.0/TheCuratorsMachine1.0_Windows.exe)
+- macOS (Apple Silicon) - [Download](https://github.com/VCI-RWTH/TrainingTheArchive/releases/download/v1.0/TheCuratorsMachine1.0_macOS_AppleSilicon.dmg)
+- macOS (Intel) - [Download](https://github.com/VCI-RWTH/TrainingTheArchive/releases/download/v1.0/TheCuratorsMachine1.0_macOS_Intel.dmg)
 
 ## **Getting started**
 
