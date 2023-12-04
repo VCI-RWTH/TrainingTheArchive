@@ -2,7 +2,7 @@
 
 
 ## **Overview**
-The Curator's Machine was developed in a cooperation between the Visual Computing Institute of the RWTH Aachen University and the Ludwig Forum Aachen, in conjunction with the HMKV Hartware MedienKunstVerein, Dortmund.. <br>
+The Curator's Machine was developed in a cooperation between the Visual Computing Institute of the RWTH Aachen University and the Ludwig Forum Aachen, in conjunction with the HMKV Hartware MedienKunstVerein, Dortmund. <br>
 
 It is a tool that assists curators by utilizing either OpenAI's CLIP model or the OpenCLIP model and provides an AI-guided search that is able to...:
 
@@ -56,6 +56,13 @@ To install the tool, you have two options:
 - macOS (Apple Silicon) - [Download](https://github.com/VCI-RWTH/TrainingTheArchive/releases/download/v1.0/TheCuratorsMachine1.0_macOS_AppleSilicon.dmg)
 - macOS (Intel) - [Download](https://github.com/VCI-RWTH/TrainingTheArchive/releases/download/v1.0/TheCuratorsMachine1.0_macOS_Intel.dmg)
 
+**Note**: When starting the application for the first time, it is normal for it to be stuck on the splash screen. This happens because some models have to be downloaded. <br>
+If you are running into problems with the installation on macOS, try the following steps:
+
+1. Try starting the application from Finder with a "ctrl" + click and choosing the "Open" option. Then, you should be able to click "Open" in the popup. This has to be done only once.
+2. If the application is not in your "Applications" folder, move it there
+3. Use the following command in the terminal `xattr -d com.apple.quarantine The\ Curator\'s\ Machine.app/` while being in the directory of the application.
+
 ## **Getting started**
 
 ### **First steps**
@@ -83,10 +90,10 @@ To do this, use the "Change Dataset" option in the "File" menu of the menu bar t
 For the generation, the tool needs the following paths:
 
 - Image directory: This has to be a path to a directory with the images you want to use. <br>
-Currently the following file formats are supported: `.jpg`, `.png`, `.tga` <br>
+Currently, the following file formats are supported: `.jpg`, `.png`, `.tga` <br>
 **Note**: Subdirectories are not supported!
 - Metadata file: This has to be a path to a `.csv` file containing metadata about the images located in the given "Image directory." <br>
-**Note**: A default preprocessing is applied that works properly, if a column named "Obj_ Id_" is provided.
+**Note**: A default preprocessing that works properly is applied if a column named "Obj_ Id_" is provided.
 
 **Note**: To correctly link the metadata to the corresponding images, the processed csv. file must contain a column named `encoding_id` that contains the index of the image in the dataset. <br>
 As inspiration for processing your own metadata file, you can use the following code: <br>
