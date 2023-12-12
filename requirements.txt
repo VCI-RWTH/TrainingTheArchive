@@ -4,7 +4,7 @@ Coop==3.0.0
 h5py==3.7.0
 numpy==1.23.0
 pandas==1.4.2
-pyinstaller==5.13.0
+pyinstaller==5.13.1
 Pillow==9.5.0
 PyQt6==6.4.0
 PyQt6_sip==13.4.0
